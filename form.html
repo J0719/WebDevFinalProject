@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>PUP</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+        <!---NavBar and Home Page-->
+        <section class="sub-header">
+            <nav>
+                <a href="index.html">PUP</a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-x" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="form.html">Form</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>Application for New/Replacement of Identification Card</h1>
+        </section>
+
+        <!---Form--->
+        <section class="form-box">
+            <div class="container">
+                <header>ID Information</header>
+
+                <form action="https://script.google.com/macros/s/AKfycbysMpElUB-oF63z-D8nJMwPOrsNNWP7j2yxYSAAGcWWVk5RpDpnA6oER1CbqbM2bt1cCQ/exec" method="post" id="form">
+
+                    <div class="form">
+                        <!--Information-->
+                        <div class="details personal">
+                            <span class="title">Personal Details</span>
+
+                            <div class="fields">
+                                <div class="input-field">
+                                    <label for="fname">First Name</label>
+                                    <input type="text" id="fname" name="First Name" placeholder="Enter first name" required>
+                                    <div class="error"></div>
+                                </div>
+
+                                <div class="input-field">
+                                    <label for="mname">Middle Name</label>
+                                    <input type="text" id="mname" name="Middle Name" placeholder="Enter middle name" required>
+                                    <div class="error"></div>
+                                </div>
+
+                                <div class="input-field">
+                                    <label for="lname">Last Name</label>
+                                    <input type="text" id="lname" name="Last Name" placeholder="Enter last name" required>
+                                    <div class="error"></div>
+                                </div>
+
+                                <div class="input-field">
+                                    <label for="gender">Gender</label>
+                                    <select name="Gender" id="gender" required>
+                                        <option hidden>Select gender</option>
+                                        <option value="Male">Male</option>
+                                        <option value="Female">Female</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                    <div class="error"></div>
+                                </div>
+
+                                <div class="input-field">
+                                    <label for="bday">Birth Date</label>
+                                    <input type="date" id="bday" name="Birth Date" placeholder="Enter birthdate" required>
+                                    <div class="error"></div>
+                                </div>
+
+                                <div class="input-field">
+                                    <label for="email">Email Address</label>
+                                    <input type="email" id="email" name="Email" placeholder="Enter email address" required>
+                                    <div class="error"></div>
+                                    <div class="error"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Address-->
+                        <div class="details address">
+                            <span class="title">Address</span>
+
+                            <div class="fields">
+                                <div class="input-field">
+                                    <label for="add">House No.</label>
+                                    <input type="text" id="add" name="House No." placeholder="Enter house no." required>
+                                    <div class="error"></div>
+                                </div>
+
+                                <div class="input-field">
+                                    <label for="strt">Street Address</label>
+                                    <input type="text" id="strt" name="Street" placeholder="Enter street address" required>
+                                    <div class="error"></div>
+                                </div>
+
+                                <div class="input-field">
+                                    <label for="brgy">Barangay</label>
+                                    <input type="text" id="brgy" name="Barangay" placeholder="Enter barangay" required>
+                                    <div class="error"></div>
+                                </div>
+
+                                <div class="input-field">
+                                    <label for="city">Municipality</label>
+                                    <input type="text" id="city" name="Municipality" placeholder="Enter municipality" required>
+                                    <div class="error"></div>
+                                </div>
+
+                                <div class="input-field">
+                                    <label for="region">Region</label>
+                                    <input type="text" id="region" name="Region" placeholder="Enter region" required>
+                                    <div class="error"></div>
+                                </div>
+
+                                <div class="input-field">
+                                    <label for="contact">Phone Number</label>
+                                    <input type="tel" id="contact" name="Phone Number" placeholder="Enter phone number" required>
+                                    <div class="error"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form">
+                        <!--Information-->
+                        <div class="details student">
+                            <span class="title">Student Details</span>
+
+                            <div class="fields">
+                                <div class="input-field">
+                                    <label for="studno">Student Number</label>
+                                    <input type="text" id="studno" name="Student Number" placeholder="Enter student no" required>
+                                    <div class="error"></div>
+                                </div>
+
+                                <div class="input-field">
+                                    <label for="dept">College Department</label>
+                                    <input type="text" id="dept" name="College Department" placeholder="Enter college department" required>
+                                    <div class="error"></div>
+                                </div>
+
+                                <div class="input-field">
+                                    <label for="course">Course</label>
+                                    <input type="text" id="course" name="Course" placeholder="Enter course" required>
+                                    <div class="error"></div>
+                                </div>
+
+                                <div class="input-field">
+                                    <label for="year">Year Level</label>
+                                    <select name="Year Level" id="year" required>
+                                        <option hidden>Select year level</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                    </select>
+                                    <div class="error"></div>
+                                </div>
+
+                                <div class="input-field">
+                                    <label for="section">Section</label>
+                                    <input type="text" id="section" name="Section" placeholder="Enter section" required>
+                                    <div class="error"></div>
+                                </div>
+
+                                <div class="input-field">
+                                    <label for="webmail">PUP Webmail</label>
+                                    <input type="email" id="email2" name="Webmail" placeholder="Enter pup webmail" required>
+                                    <div class="error"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Guardian-->
+                        <div class="details guardian">
+                            <span class="title">In case of emergency, please notify</span>
+
+                            <div class="fields">
+                                <div class="input-field">
+                                    <label for="gfname">First Name</label>
+                                    <input type="text" id="gfname" name="Guardian First Name" placeholder="Enter first name" required>
+                                    <div class="error"></div>
+                                </div>
+
+                                <div class="input-field">
+                                    <label for="glname">Last Name</label>
+                                    <input type="text" id="glname" name="Guardian Last Name" placeholder="Enter last name" required>
+                                    <div class="error"></div>
+                                </div>
+
+                                <div class="input-field">
+                                    <label for="relation">Relationship</label>
+                                    <input type="text" id="relation" name="Relationship" placeholder="Enter relationship" required>
+                                    <div class="error"></div>
+                                </div>
+
+                                <div class="input-field">
+                                    <label for="contact2">Contact</label>
+                                    <input type="tel" id="contact2" name="Contact Number" placeholder="Enter contact number" required>
+                                    <div class="error"></div>
+                                </div>
+
+                                <div class="input-field">
+                                    <label for="add2">Address Line</label>
+                                    <input type="text" id="add2" name="Address Line" placeholder="Enter address line" required>
+                                    <div class="error"></div>
+                                </div>
+
+                                <div class="input-field">
+                                    <label for="city2">Municipalityr</label>
+                                    <input type="tel" id="city2" name="City" placeholder="Enter municipality" required>
+                                    <div class="error"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!---Footer--->
+        <section class="footer">
+            <p>This website content is for informational purposes only and is not subject to copyright claims. Use at your own risk.</p>
+            <br><br>    <p>Made <i class="fa-regular fa-at"></i> 2024</p>
+        </section>
+
+
+        <!---Java Script for Toggle Menu--->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu() {
+                navLinks.style.right = "0";
+            }
+
+            function hideMenu() {
+                navLinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>
